@@ -114,7 +114,7 @@ export default class Graphcool {
   }
 
   async validateToken(token: string): Promise<boolean> {
-    throw new Error('Not implemented yet')
+    return this.token === token
   }
 
   checkPermissionQuery(query: string, variables?: any): Promise<boolean> {
